@@ -13,7 +13,7 @@ This project is set up to reproduce and investigate UDP binding issues.
    ```
 4. Execute following command to see the error
   ```bash
-  nc -u 127.0.0.1 5060 < invite.txt
+  sed 's/$/\r/' invite.txt | nc -u 127.0.0.1 5060
   ```
 
 ## License
